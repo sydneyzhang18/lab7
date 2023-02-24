@@ -11,7 +11,7 @@ class ListExamples {
   static List<String> filter(List<String> list, StringChecker sc) {
     List<String> result = new ArrayList<>();
     for(String s: list) {
-      if(sc.checkString(s)) {
+      if(sc.checkString(0, s)) {
         result.add(s);
       }
     }
@@ -40,7 +40,7 @@ class ListExamples {
     }
     while(index2 < list2.size()) {
       result.add(list2.get(index2));
-      index2 += 1;
+      index1 += 1;
     }
     return result;
   }
