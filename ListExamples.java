@@ -11,8 +11,8 @@ class ListExamples {
   static List<String> filter(List<String> list, StringChecker sc) {
     List<String> result = new ArrayList<>();
     for(String s: list) {
-      if(sc.checkString(0, s)) {
-        result.add(s);
+      if(sc.checkString(s)) {
+        result.add(0, s);
       }
     }
     return result;
